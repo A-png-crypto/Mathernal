@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maternal Health Risk Prediction</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <nav class="nav"><div class="brand">🩺 Maternal Health AI</div><a href="#predict">Prediction</a><a href="#performance">Performance</a><a href="#about">About</a></nav>
+  <div class="hero-inner"><div><span class="eyebrow">SIERRA LEONE MATERNAL HEALTH RESEARCH</span><h1>Maternal Health Risk Prediction</h1><p>Artificial Neural Network (ANN) prediction using three maternal-health datasets.</p><a class="btn" href="#predict">Start Prediction</a></div><div class="hero-card"><strong>ANN</strong><span>Neural-network based classification</span><small>Low • Medium • High Risk</small></div></div>
+</header>
+<main>
+<section id="predict" class="section">
+  <div class="section-head"><div><span class="eyebrow">PREDICT</span><h2>Enter maternal health information</h2></div><select id="dataset"><option value="polyclinic">Polyclinic Dataset</option><option value="mendeley">Mendeley Dataset</option><option value="uci">UCI Dataset</option></select></div>
+  <div id="datasetInfo" class="info"></div>
+  <div class="grid"><form id="predictionForm" class="panel form-grid"></form><div id="result" class="panel result"><div class="empty">Enter the patient values and click <b>Predict Risk</b>.</div></div></div>
+</section>
+<section id="performance" class="section alt"><div class="section-head"><div><span class="eyebrow">MODEL PERFORMANCE</span><h2>ANN performance</h2></div></div><div id="metrics" class="metrics"></div><div class="panel"><h3>Confusion Matrix</h3><div id="confusion" class="matrix"></div></div></section>
+<section id="about" class="section"><div class="two"><div><span class="eyebrow">ABOUT THE PROJECT</span><h2>Research prototype</h2><p>This web application demonstrates maternal health risk classification using an Artificial Neural Network. The model was trained separately for each dataset and the browser performs the final prediction using the saved ANN parameters.</p><p class="note">This is an educational/research prototype and is not a substitute for professional medical diagnosis.</p></div><div class="panel"><h3>Datasets</h3><ul><li>Polyclinic Dataset — 500 records</li><li>UCI Maternal Health Risk Dataset — 1,014 records</li><li>Mendeley Dataset — 6,103 records</li></ul><p class="privacy">Patient identifiers from the Mendeley source are excluded from the public copy because they are not model features.</p></div></div></section>
+</main>
+<footer>Maternal Health Risk Prediction • ANN Research Prototype</footer>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.3/papaparse.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
